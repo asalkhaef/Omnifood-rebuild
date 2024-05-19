@@ -14,9 +14,18 @@ body {
 }
 /************************/
 /******* GENERAL ********/
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px;
+  box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.5);
+ */
+  outline: 2px dotted #e67e22;
+}
 strong {
   font-weight: 500;
 }
+.btn,
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -26,6 +35,9 @@ strong {
   border-radius: 9px;
   display: inline-block;
   transition: all 1s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -45,6 +57,18 @@ strong {
 .btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  padding: 1.2rem;
+  align-self: flex-end;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .margin-right-sm {
@@ -393,7 +417,6 @@ strong {
   box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.015);
   border-radius: 11px;
   background-image: linear-gradient(90deg, #eb984e, #e67e22);
-  height: 50rem;
   overflow: hidden;
 }
 .cta-text-box {
@@ -420,5 +443,29 @@ strong {
   column-gap: 3.2rem;
   row-gap: 2.4rem;
 }
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px rgb(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta-form button {
+}
+
 /************************/
 /******* FOOTER ********/
