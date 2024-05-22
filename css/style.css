@@ -479,7 +479,7 @@ strong {
   gap: 1.6rem;
   padding: 1.6rem;
 }
-..gallery-item {
+.gallery-item {
   overflow: hidden;
 }
 .gallery-item img {
